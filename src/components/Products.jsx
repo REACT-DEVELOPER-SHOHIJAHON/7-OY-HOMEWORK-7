@@ -3,6 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
 const Product = () => {
+  console.log(products)
   const products = useSelector((state) => state.cart.products);
   // Savatdagi barcha mahsulotlarning umumiy narxini hisoblash
   const itemTotal = products.reduce(
